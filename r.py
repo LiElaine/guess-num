@@ -1,15 +1,16 @@
 import random
 r = random.randint(1,100)
-
+count = 0
 while True:
-	num = input("請猜數字1~100:")
+	count += 1
+	num = input('請猜數字1~100:')
 	num = int(num)
 	if num == r:
-		print('答案正確')
+		print('你猜對溜')
+		print('這是你猜的第' , count, '次')
 		break
 	elif num > r:
-		print('你猜的數字比正確答案大喔')
-		break
+		print('你的回答比正確答案大')
 	elif num < r:
-		print('你猜的數字比正確答案小喔')
-		break
+		print('你的回答比正確答案小') 
+	print('這是你猜的第' , count, '次')
